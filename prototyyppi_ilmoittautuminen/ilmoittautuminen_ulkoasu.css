@@ -1,0 +1,44 @@
+/*tausta*/
+body
+{
+background-color:#f44242;
+border:0;
+padding:0;
+margin:0;
+text-align:center;
+}
+
+/* tekstialueet*/
+
+
+
+#teksti {
+font-family:Verdana;
+color:#07bfd8;
+}
+#buttoni {
+font-family:Verdana;
+color:#07bfd8;
+background-color:#0d0d0d ;
+border:1.5px ,black;
+}
+/* tekstit ****************************/
+h1 {
+font-family:Adobe Fan Heiti Std B;
+font-size:1.3em;
+margin-bottom:3px;
+}
+
+h2 {
+font-family:Adobe Garam Ond Pro bold;
+font-size:0.8em;
+font-style:italic;
+font-weight:lighter;
+margin-top:3px;
+}
+
+p {
+margin-left:15px; 
+font-size:0.9em;
+}
+
