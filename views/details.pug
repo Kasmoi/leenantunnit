@@ -1,0 +1,16 @@
+extends layout 
+
+block content 
+    h1=title 
+    <hr> 
+        if error 
+            p Virhe!! 
+        else 
+        h1= palaute.id 
+        - var id=palaute.id 
+        article  
+            p id: #{palaute.id}  
+            p title: #{palaute.title}  
+            p status: #{palaute.status} 
+             
+            p: a(href='./deletepalaute/' + id) Poista

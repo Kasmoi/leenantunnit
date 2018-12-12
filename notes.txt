@@ -1,0 +1,78 @@
+//suunnitelma node hajr1
+
+
+
+databaset ja niitten kentät
+
+users: olemassa jo
+
+comments:
+		KommenttiID
+		otsikko:(VARCHAR 100)
+		kommentti:(VARCHAR 400)
+////////////////////////////////		
+APP:
+require(kaikki modulet)
+
+
+app.use(eri käyttöjä)
+passport.use(salasana ja kirjautuminen)
+passport.serializeUser
+passport.deserializeUser
+app.get
+app.post
+
+////////////////////////
+YHTEYS TIETOKANTAAN:
+
+var mysql        = require('mysql'); 
+
+var connection   = mysql.createConnection({ 
+  supportBigNumbers: true, 
+  bigNumberStrings: true, 
+  host     : "magnesium", 
+  user     : "16bkasmirm", 
+  password : "salasana", 
+  database : "db16bkasmirm" 
+}); 
+
+module.exports = connection;
+/////////////////////
+palauteController
+
+
+
+//////////////////////////
+TARVITTAVAT ASENNUKSET:
+cors
+mysql
+passport
+passport-local
+connect-flash
+express-session
+express-validator
+express-controller
+session-memory-store
+crypto
+//////////////////////
+näkymät:
+index.pug
+palaute.pug(details)
+login.pug
+layoutetusivu.pug
+Layout.pug
+
+/////////
+routes
+index.js
+palautteet.js
+users.js
+
+//////////////
+mallit:
+Palaute:
+	getAllpalaute
+	getpalauteById
+	addpalaute
+	deletepalaute
+/////////////
