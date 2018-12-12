@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<h2>Tallenna ja hae dataa paikallisesti</h2> 
+
+<p id="demo"></p> 
+
+<script> 
+var myObj, myJSON, text, obj; 
+
+//Tallenna data: 
+myObj = { "nimi":"Eemeli", "age":17, "koti":"Tampere" }; 
+myJSON = JSON.stringify(myObj); //muuttaa javan JSONiin
+localStorage.setItem("testJSON", myJSON); //tallentaa varastoon JSON
+
+//Hae data: 
+text = localStorage.getItem("testJSON"); //hakee dataa
+obj = JSON.parse(text); 
+document.getElementById("demo").innerHTML = obj.nimi; 
+</script> 
+
+</body> 
+</html> 
